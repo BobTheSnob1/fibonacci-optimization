@@ -39,7 +39,7 @@ int fib_timeboxed() {
         end_time = clock();
         time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
     } while (time_spent < 0.1);
-    printf("%llu\n", fibs[10]);
+    // printf("%llu\n", fibs[10]); // to test if it actually does the calculations
     return n;
     free(fibs);
 }
